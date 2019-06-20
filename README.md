@@ -44,4 +44,4 @@ This repository is the starter code for _all_ Udacity students. Therefore, we mo
 + life line will be reduced for every increment in dangerCount by 2.
 + score and life line is an addon for this project.
 + when the life line is over a message will be displayed. User can play the game again by clicking on the PlayAgain button. Window will be refreshed if player clicks on PlayAgain button.  
-+ User can play the game by opening `index.html` file in browser. So please open `index.html` file in chrome.
++ User can play the game by opening `index.html` file in browser. So please open `index.html` file in browser.
