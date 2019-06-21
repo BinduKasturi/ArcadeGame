@@ -42,6 +42,13 @@ This repository is the starter code for _all_ Udacity students. Therefore, we mo
 + update() function will generate a random speed for all three enemies and updates the speed.
 + In case if player touches enemy then dangerCount will be incremented by 1 and player will come to initial position.
 + life line will be reduced for every increment in dangerCount by 2.
-+ score and life line is an addon for this project.
-+ when the life line is over a message will be displayed. User can play the game again by clicking on the PlayAgain button. Window will be refreshed if player clicks on PlayAgain button.  
-+ User can play the game by opening `index.html` file in browser. So please open `index.html` file in browser.
++ score and life line is an addon for this project.  
+## How to start the game
++ User can start the game by opening `index.html` file in browser. So please open `index.html` file in chrome.
+## How to play the game
++ User can play the game by using left, right, up and down arrows.
++ initially, player will be positioned in the grass area. In order to win the game player have to touch the water area.
++ Enemies will be running at random speed on stone area. Player have to cross the stone area in order to touch water area.
++ in case player touches any enemy he will automatically comes to grass area and dangerCount will be incremented.
++ Life line will be reduced based on dangerCount. If player touches water area score will be incremented.
++ when the life line is over a message will be displayed. User can play the game again by clicking on the PlayAgain button. Window will be refreshed if player clicks on PlayAgain button.
