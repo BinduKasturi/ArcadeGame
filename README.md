@@ -44,7 +44,7 @@ This repository is the starter code for _all_ Udacity students. Therefore, we mo
 + life line will be reduced for every increment in dangerCount by 2.
 + score and life line is an addon for this project.  
 ## How to start the game
-+ User can start the game by opening `index.html` file in browser. So please open `index.html` file in chrome.
++ User can start the game by opening `index.html` file in browser. So please open `index.html` file in browser.
 ## How to play the game
 + User can play the game by using left, right, up and down arrows.
 + initially, player will be positioned in the grass area. In order to win the game player have to touch the water area.
