@@ -16,6 +16,7 @@ var score = 0;
 // to display score dynamically
 var scorePannel = document.querySelector("#score");
 var h = document.createElement("h1");
+h.innerHTML = "Score:" + score;
 scorePannel.append(h);
 // Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
@@ -34,9 +35,10 @@ Enemy.prototype.update = function(dt) {
 	//if player touches bug then payer comes to initial position.
 	// comparing the positions of player and bug .
 	if (this.y < player.y + 80 && this.y + 80 > player.y && this.x + 60 > player.x && this.x < player.x + 60) {
+		dangerCount = dangerCount + 1;
+		life();
 		player.x = player.x;
 		player.y = 404;
-		dangerCount = dangerCount + 1;
 	}
 };
 // Draw the enemy on the screen, required method for game
@@ -54,8 +56,6 @@ class Hero {
 	}
 }
 Hero.prototype.update = function(dt) {
-	life();
-	h.innerHTML = "Score:" + score;
 }
 Hero.prototype.render = function() {
 	ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
@@ -94,6 +94,7 @@ Hero.prototype.handleInput = function(key) {
 				this.y = 410;
 			}, 100);
 			score = score + 1;
+			h.innerHTML = "Score:" + score;
 		}
 	} else {
 		this.y = this.y + 83;
