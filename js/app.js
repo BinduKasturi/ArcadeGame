@@ -35,10 +35,10 @@ Enemy.prototype.update = function(dt) {
 	//if player touches bug then payer comes to initial position.
 	// comparing the positions of player and bug .
 	if (this.y < player.y + 80 && this.y + 80 > player.y && this.x + 60 > player.x && this.x < player.x + 60) {
-		dangerCount = dangerCount + 1;
-		life();
 		player.x = player.x;
 		player.y = 404;
+		dangerCount = dangerCount + 1;
+		life();
 	}
 };
 // Draw the enemy on the screen, required method for game
@@ -55,8 +55,7 @@ class Hero {
 		this.sprite = 'images/char-cat-girl.png';
 	}
 }
-Hero.prototype.update = function(dt) {
-}
+Hero.prototype.update = function(dt) {}
 Hero.prototype.render = function() {
 	ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
@@ -125,10 +124,10 @@ function life() {
 			lf = lf - 1;
 			lifered[lf].style.display = "none";
 		}
-		// condition to display message after completion of the game
-		if (lf == 0) {
-			alert("Great Job! Click on OK to playAgain");
-			window.location.reload();
-		}
+	}
+	// condition to display message after completion of the game
+	if (lf == 0) {
+		alert("Great Job! Click on OK to playAgain");
+		window.location.reload();
 	}
 }
