@@ -127,12 +127,8 @@ function life() {
 		}
 		// condition to display message after completion of the game
 		if (lf == 0) {
-			Swal.fire({
-				title: ' Congragulations! You Won  ',
-				confirmButtonText: 'Play Again',
-			}).then(() => {
-				window.location.reload();
-			});
+			alert("Great Job! Click on OK to playAgain");
+			window.location.reload();
 		}
 	}
 }
