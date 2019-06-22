@@ -127,17 +127,12 @@ function life() {
 		}
 		// condition to display message after completion of the game
 		if (lf == 0) {
-			var alert = document.getElementById("alert");
-			var span = document.getElementsByClassName("close")[0];
-			alert.style.display = "block";
-			span.onclick = function() {
-				alert.style.display = "none";
-			}
-			window.onclick = function(event) {
-				if (event.target == alert) {
-					alert.style.display = "none";
-				}
-			}
+			Swal.fire({
+				title: ' Congragulations! You Won  ',
+				confirmButtonText: 'Play Again',
+			}).then(() => {
+				window.location.reload();
+			});
 		}
 	}
 }
